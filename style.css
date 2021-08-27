@@ -1,0 +1,291 @@
+body{
+    margin: auto;
+    width: 1024px;
+    height: 732px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.differnce{
+    display:flex;
+    flex-direction:column;
+}
+
+/*Описание заголовка*/
+
+.header{
+    display: flex;
+    width: 100%;
+    padding-right: 22px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    background-image: url("images/logo.png");
+    width: 230px;
+    height: 86px;
+}
+
+
+.number{
+    background-image: url("images/number.png");
+    width: 177px;
+    height: 36px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+
+.menu{
+    display: flex;
+    width: 100%;
+    background-color: #231f20;
+    list-style-type: none;
+    margin-top: 21px;
+    padding: 0;
+    justify-content: center;
+}
+
+
+.menu li {
+    border-right: 1px solid #eb5017;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 14px 38px;
+
+}
+
+
+li a:hover {
+    background-color: #eb5017;
+}
+
+
+li:last-child {
+    border-right: none;
+}
+
+/*Хлебные крошки*/
+
+.breadcrumbs{
+    padding-left: 30px;
+    margin-top: 14px;
+}
+
+
+.breadcrumbs a{
+    font-size: 12px;
+    color: #231f20;
+}
+
+/*Калькулятор*/
+
+.calculator{
+    height: 378px;
+    width: 652px;
+    background-color: #f2f2f2;
+    margin-left: 30px;
+    margin-top: 24px;
+}
+
+
+.Text{
+    padding-left: 98px;
+    color: #eb5017;
+    font-size: 30px;
+    padding-top: 19px;
+}
+
+
+.inputclass{
+    margin-top: 28px;
+}
+
+
+.inputline{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 0;
+}
+
+
+.inputline p{
+    margin-right: 15px;
+    width: 200px;
+    text-align: right;
+    font-size: 14px;
+}
+
+
+.input{
+    width: 88px;
+}
+
+
+.inputyears{
+    width: 88px;
+}
+
+
+.radiobutt{
+    font-size: 14px;
+}
+
+/*Описание ползунков*/
+
+.slyder{
+    margin-left: 18px;
+    width: 241px;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+input[type='range'] {
+    overflow: hidden;
+    outline: 1px solid white solid 239px;
+    border:2px solid #1e1f22; 
+    background-color: #1e1f22;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    
+}
+
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 5px;
+}
+
+
+input[type='range']::-webkit-slider-thumb {
+    width: 5px;
+    -webkit-appearance: none;
+    height: 5px;
+    background: linear-gradient(180deg, white, gray);
+    border-radius: 10px;
+    box-shadow: -120px 0 0 116px #84aa31;
+    cursor: grab;
+}
+
+
+input[type="range"]::-ms-fill-lower {
+    background-color: #84aa31;
+}
+
+
+input[type="range"]::-ms-fill-upper {  
+    background-color: #1e1f22;
+}
+
+
+input[type="range"]::-moz-range-progress {
+    background-color: #84aa31; 
+}
+
+
+input[type="range"]::-moz-range-track {  
+    background-color: #1e1f22;
+}
+
+
+.slyderclass p{
+    display: flex;
+    margin:0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 10px;
+    color: #676767;
+    position: absolute;
+    padding-right: 129px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.a{
+    right:0px;
+}
+
+
+.b{
+    right: -185px;
+}
+
+/*Результат*/
+
+.buttomResult{
+    display: flex;
+    margin-left: 21px;
+    align-items: center;
+}
+
+
+.buttomResult input {
+    height: 32px;
+    width: 100px;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-top: 15px;
+    border-radius: 7px;
+    color: #395306;
+    margin-left: 21px;
+    border: 1px solid #f0ff35;
+    background: linear-gradient(180deg, #bef435, #86cd00);
+    text-align: center;
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    font-weight:bold;
+    cursor: grab;
+}
+
+
+.buttomResult p {
+    color: #395306;
+    font-weight:bold;
+    margin-left: 24px;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+.result{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/*Описание подвала*/
+
+.footer{
+    position: fixed;
+    display: flex;
+    height: 56px;
+    background-color: #231f20;
+    bottom: 0;
+    width: 1024px;
+}
+
+
+.footerpad{
+    margin-left: 56px;
+    padding-top: 12px;  
+}
+
+
+.footerpad a{
+   margin-right: 26px;
+   font-size: 12px;
+   color: white;
+}
